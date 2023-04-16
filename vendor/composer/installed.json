@@ -123,6 +123,70 @@
             "install-path": "../brick/math"
         },
         {
+            "name": "davidgrzyb/deploy-laravel-on-vercel",
+            "version": "v0.1.0",
+            "version_normalized": "0.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/davidgrzyb/deploy-laravel-on-vercel.git",
+                "reference": "27fc75e9419603c1da79c228b8347c75d1b5ca6c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/davidgrzyb/deploy-laravel-on-vercel/zipball/27fc75e9419603c1da79c228b8347c75d1b5ca6c",
+                "reference": "27fc75e9419603c1da79c228b8347c75d1b5ca6c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^8.0",
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "time": "2021-07-02T16:30:13+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "DavidGrzyb\\DeployLaravelOnVercel\\DeployLaravelOnVercelServiceProvider"
+                    ],
+                    "aliases": {
+                        "DeployLaravelOnVercel": "DavidGrzyb\\DeployLaravelOnVercel\\DeployLaravelOnVercelFacade"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "DavidGrzyb\\DeployLaravelOnVercel\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Grzyb",
+                    "email": "grzybdavid@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A package for generating files required for deployment to serverless Vercel.",
+            "homepage": "https://github.com/davidgrzyb/deploy-laravel-on-vercel",
+            "keywords": [
+                "davidgrzyb",
+                "deploy-laravel-on-vercel"
+            ],
+            "support": {
+                "issues": "https://github.com/davidgrzyb/deploy-laravel-on-vercel/issues",
+                "source": "https://github.com/davidgrzyb/deploy-laravel-on-vercel/tree/v0.1.0"
+            },
+            "install-path": "../davidgrzyb/deploy-laravel-on-vercel"
+        },
+        {
             "name": "dflydev/dot-access-data",
             "version": "v3.0.2",
             "version_normalized": "3.0.2.0",
@@ -8029,6 +8093,7 @@
     ],
     "dev": true,
     "dev-package-names": [
+        "davidgrzyb/deploy-laravel-on-vercel",
         "doctrine/instantiator",
         "facade/flare-client-php",
         "facade/ignition",
